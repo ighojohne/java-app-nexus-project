@@ -16,6 +16,6 @@ build_image:
     - arm
     - shell
   before_script:
-    - cd src #changing directory into the folder where the application file
+    - cd src/main #changing directory into the folder where the application file
   script:
-    - gradle build #building the artifact
+    - gradlew build #building the artifact
