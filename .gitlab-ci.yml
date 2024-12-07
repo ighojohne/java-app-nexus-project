@@ -9,7 +9,7 @@ workflow:
 stages:
     - build
 
-build_image:
+build_artifact:
   stage: build
   tags:
     - window
@@ -18,4 +18,4 @@ build_image:
   before_script:
     - cd src/main #changing directory into the folder where the application file
   script:
-    - gradle . build ##building the artifact
+    - ./gradle build ##building the artifact
