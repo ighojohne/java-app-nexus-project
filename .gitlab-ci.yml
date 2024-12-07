@@ -15,7 +15,5 @@ build_artifact:
     - window
     - arm
     - shell
-  before_script:
-    - cd src/main #changing directory into the folder where the application file
   script:
-    - ./gradlew build ##building the artifact
+    - .\gradlew build ##building the artifact
